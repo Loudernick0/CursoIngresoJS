@@ -8,7 +8,127 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
-function CalcularPrecio () 
+/*function CalcularPrecio () 
 {
- 	
-}
+     var cantidadlamparas;
+     var marcalampara;
+     var descuentofinal;
+     var descuento;
+     var preciofinal;
+     var preciounitario;
+     var preciosindescuento;
+     var IIBBdesc;
+     var IIBB;
+
+     cantidadlamparas = txtIdCantidad.value;
+     cantidadlamparas = parseInt(cantidadlamparas);
+     marcalampara = Marca.value;
+     preciounitario = 35;
+
+     if(cantidadlamparas >=6)
+     {
+        descuento = 50;
+     }
+     else
+     {
+         if(cantidadlamparas == 5)
+         {
+             if(marcalampara == "ArgentinaLuz")
+             {
+                descuento = 40;
+             }
+             else
+             {
+                 descuento = 30;
+             }
+         }
+         else
+         {
+             if(cantidadlamparas == 4)
+             {
+                 if(marcalampara == "ArgentinaLuz" || marcalampara == "FelipeLamparas")
+                 {
+                     descuento = 25;
+                 }
+                 else
+                 {
+                     descuento = 20;
+                 }
+             }
+             else
+             {
+                 if(cantidadlamparas == 3)
+                 {
+                     if(marcalampara == "ArgentinaLuz")
+                     {
+                         descuento = 15;
+                     }
+                     else
+                     {
+                         if(marcalampara == "FelipeLamparas")
+                         {
+                             descuento = 10;
+                         }
+                         else
+                         {
+                             descuento = 5;
+                         }
+                     }
+                 }
+                 else
+                 {
+                     descuento = 0;
+                 }
+             }
+         }
+     }
+
+     preciosindescuento = cantidadlamparas*preciounitario;
+
+     if(descuento == 0)
+     {
+         descuentofinal = 0;
+     }
+     else
+     {
+        descuentofinal = (preciosindescuento*descuento) / 100;
+     }
+     preciofinal = preciosindescuento - descuentofinal;
+
+     if(preciofinal > 120)
+     {
+         IIBBdesc = (preciofinal*10) / 100;
+         IIBB = preciofinal + IIBBdesc;
+
+         txtIdprecioDescuento.value = IIBB;
+         alert("Usted pago "+IIBBdesc+" en concepto de Ingresos Brutos")
+     }
+     else
+     {
+        txtIdprecioDescuento.value = preciofinal;
+
+     }
+
+}*/
+
+
+function CalcularPrecio () 
+{ var cantidadlamparas;
+    var marcalampara;
+    var descuentofinal;
+    var descuento;
+    var preciofinal;
+    var preciounitario;
+    var preciosindescuento;
+    var IIBBdesc;
+    var IIBB;
+
+    cantidadlamparas = txtIdCantidad.value;
+     cantidadlamparas = parseInt(cantidadlamparas);
+     marcalampara = Marca.value;
+     preciounitario = 35;
+
+     switch (cantidadlamparas)
+     {
+         case 
+     }
